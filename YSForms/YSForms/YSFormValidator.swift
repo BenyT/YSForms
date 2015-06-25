@@ -47,9 +47,9 @@ enum YSFormValidator {
 
     case Email
     case Phone
-    case Required
+    case Required (failMessage: String)
     
-    func isValid (text: String) -> Bool {
+    func isValid (text: String, success: (() -> Void)?, fail: ((String) -> Void)?) {
         
         var validator: YSFormValidatable!
         
@@ -61,11 +61,15 @@ enum YSFormValidator {
         case .Phone:
             validator = YSFormRegexValidator(regexRule: "^\\d{10}$", failMessage: "Phone not valid")
             
-        case .Required:
-            validator = YSFormRequiredValidator(failMessage: "Please fill this area")
+        case .Required (let message):
+            validator = YSFormRequiredValidator(failMessage: message)
         }
         
-        return validator.validate(text)
+        if validator.validate(text) {
+            success? ()
+        } else {
+            fail? (validator.failMessage)
+        }
     }
     
 }

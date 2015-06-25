@@ -8,7 +8,7 @@
 
 import UIKit
 
-class YSFormCell {
+class YSFormCell: NSObject {
     
     // MARK: Propperties
     
@@ -76,23 +76,40 @@ class YSFormCell {
 
     // MARK: Validation
     
-    func addValid (validator: YSFormValidator) {
+    func addValidator (validator: YSFormValidator) {
         
         if validators == nil {
             validators = []
         }
         
-        validators?.append(validator)
+        validators!.append(validator)
     }
     
-    func isValid () -> Bool {
+    func isValid (success: (() -> Void)?, fail: ((String) -> Void)?) {
+        
+        var valid = true
+        var failMessage = ""
         
         if let v = validators {
-            if let value = value as? String {
-                return count(Set(v.map{ return $0.isValid(value).0 })) <= 1
+
+            var text = (value as? String) ?? ""
+            
+            for validator in v {
+                validator.isValid(text,
+                    success: nil,
+                    fail: {
+                        message in
+                        failMessage = message
+                        valid = false
+                    })
             }
         }
         
-        return true
+        if valid {
+            success? ()
+        } else {
+            fail? (failMessage)
+        }
+        
     }
 }

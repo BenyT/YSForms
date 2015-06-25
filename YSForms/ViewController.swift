@@ -14,28 +14,75 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = UIColor.BackgroundColor()
         
-        let form = YSForm()
+        // first section
         
         let firstSection = YSFormSection(tag: "sec 1", title: "Required")
         firstSection.addCell(YSFormTextFieldCell(tag: "first", title: "First Name", value: nil))
         firstSection.addCell(YSFormTextFieldCell(tag: "last", title: "Last Name", value: nil))
         firstSection.addCell(YSFormTextFieldCell(tag: "address", title: "Address", value: nil))
         
+        
+        // second section
+        
         let secondSection = YSFormSection(tag: "sec 2", title: "Information")
         secondSection.addCell(YSFormTextFieldCell(tag: "city", title: "City", value: nil))
         secondSection.addCell(YSFormTextViewCell(tag: "notes", title: "Notes", value: nil))
         secondSection.addCell(YSFormTextViewCell(tag: "add", title: "Additional", value: nil))
         
+        
+        // third section
+        
+        let mailCell = YSFormTextFieldCell(tag: "mail", title: "Email", value: nil)
+        mailCell.addValidator(YSFormValidator.Email)
+        mailCell.addValidator(YSFormValidator.Required(failMessage: "Lutfen Mail Adresinizi giriniz"))
+        
+        let phoneCell = YSFormTextFieldCell(tag: "phone", title: "Phone", value: nil)
+        phoneCell.addValidator(YSFormValidator.Phone)
+        phoneCell.addValidator(YSFormValidator.Required(failMessage: "Lutfen telefon numaranizi giriniz"))
+        
+        
+        let thirdSection = YSFormSection(tag: "sec 3", title: "Validation")
+        thirdSection.addCell(mailCell)
+        thirdSection.addCell(phoneCell)
+        
+        
+        // form
+        
+        let form = YSForm()
         form.addSection(firstSection)
         form.addSection(secondSection)
+        form.addSection(thirdSection)
+        
+        
+        // scroll
         
         let scroll = TPKeyboardAvoidingScrollView(frame: view.frame)
         view.addSubview(scroll)
         
         scroll.addSubview(form.form)
         form.form.y = 30
-        scroll.contentHeight = form.form.bottomWithOffset(10)
-    
+        
+        
+        // validate button
+        
+        let but = BlockButton(x: 20, y: form.form.bottomWithOffset(10), w: scroll.w - 40, h: 60)
+        but.setTitle("validate", forState: .Normal)
+        but.backgroundColor = UIColor.GreenColor()
+        but.actionBlock = {
+            sender in
+            form.validate({
+                println ("form is valid")
+            },
+            fail: {
+                message in
+                println ("form not valid")
+                println (message)
+            })
+        }
+        
+        scroll.addSubview(but)
+        scroll.contentHeight = but.bottomWithOffset(10)
+        
     }
 
 }

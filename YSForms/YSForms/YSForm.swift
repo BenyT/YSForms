@@ -75,8 +75,22 @@ class YSForm {
     
     // MARK: Validate
     
-    func validate () {
+    func validate (success: () -> Void, fail: (String) -> Void) {
         
+        var valid = true
+        var msg = ""
+        
+        for s in sections {
+            for c in s.cells {
+                c.isValid(nil, fail: { message in valid = false; msg = message })
+            }
+        }
+        
+        if valid {
+            success()
+        } else {
+            fail(msg)
+        }
     }
     
 }
