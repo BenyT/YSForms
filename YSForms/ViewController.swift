@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         
         let form = YSForm()
         
-        let firstSection = YSFormSection(tag: "sec 1", title: nil)
+        let firstSection = YSFormSection(tag: "sec 1", title: "Required")
         firstSection.addCell(YSFormTextFieldCell(tag: "first", title: "First Name", value: nil))
         firstSection.addCell(YSFormTextFieldCell(tag: "last", title: "Last Name", value: nil))
         firstSection.addCell(YSFormTextFieldCell(tag: "address", title: "Address", value: nil))
@@ -33,7 +33,8 @@ class ViewController: UIViewController {
         view.addSubview(scroll)
         
         scroll.addSubview(form.form)
-        scroll.contentHeight = form.form.h
+        form.form.y = 30
+        scroll.contentHeight = form.form.bottomWithOffset(10)
     }
 
 }
