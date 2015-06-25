@@ -1,0 +1,581 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		597315EAB1F2418785DE110F /* libPods-YSForms.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D65683485FD41678EA595704 /* libPods-YSForms.a */; };
+		B276EA161B3BDFED00BB3B7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B276EA151B3BDFED00BB3B7E /* AppDelegate.swift */; };
+		B276EA181B3BDFED00BB3B7E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B276EA171B3BDFED00BB3B7E /* ViewController.swift */; };
+		B276EA1B1B3BDFED00BB3B7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B276EA191B3BDFED00BB3B7E /* Main.storyboard */; };
+		B276EA1D1B3BDFED00BB3B7E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B276EA1C1B3BDFED00BB3B7E /* Images.xcassets */; };
+		B276EA201B3BDFED00BB3B7E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B276EA1E1B3BDFED00BB3B7E /* LaunchScreen.xib */; };
+		B276EA2C1B3BDFED00BB3B7E /* YSFormsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B276EA2B1B3BDFED00BB3B7E /* YSFormsTests.swift */; };
+		B276EA3B1B3BE24C00BB3B7E /* CEMKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B276EA381B3BE24C00BB3B7E /* CEMKit.swift */; };
+		B276EA3C1B3BE24C00BB3B7E /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = B276EA3A1B3BE24C00BB3B7E /* Style.swift */; };
+		B276EA3E1B3BE29000BB3B7E /* YSForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = B276EA3D1B3BE29000BB3B7E /* YSForm.swift */; };
+		B276EA401B3BE2A800BB3B7E /* YSFormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B276EA3F1B3BE2A800BB3B7E /* YSFormCell.swift */; };
+		B276EA421B3BE2C000BB3B7E /* YSFormSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B276EA411B3BE2C000BB3B7E /* YSFormSection.swift */; };
+		B276EA451B3BE2F600BB3B7E /* YSFormTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B276EA441B3BE2F600BB3B7E /* YSFormTextFieldCell.swift */; };
+		B276EA471B3BE30E00BB3B7E /* YSFormTextViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B276EA461B3BE30E00BB3B7E /* YSFormTextViewCell.swift */; };
+		B276EA491B3BE33200BB3B7E /* YSFormPickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B276EA481B3BE33200BB3B7E /* YSFormPickerCell.swift */; };
+		B276EA4B1B3BE41F00BB3B7E /* YSFormSwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B276EA4A1B3BE41F00BB3B7E /* YSFormSwitchCell.swift */; };
+		B276EA541B3BEDFB00BB3B7E /* YSFormCellAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = B276EA531B3BEDFB00BB3B7E /* YSFormCellAppearance.swift */; };
+		B276EA561B3BF17D00BB3B7E /* YSFormCellTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B276EA551B3BF17D00BB3B7E /* YSFormCellTextField.swift */; };
+		B276EA591B3BF72400BB3B7E /* YSFormCellTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B276EA571B3BF72400BB3B7E /* YSFormCellTextView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B276EA261B3BDFED00BB3B7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B276EA081B3BDFEC00BB3B7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B276EA0F1B3BDFED00BB3B7E;
+			remoteInfo = YSForms;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3866D0CFA8FF5216E2C62748 /* Pods-YSForms.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YSForms.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YSForms/Pods-YSForms.debug.xcconfig"; sourceTree = "<group>"; };
+		63242C8A25A1F2D0D455836D /* Pods-YSForms.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YSForms.release.xcconfig"; path = "Pods/Target Support Files/Pods-YSForms/Pods-YSForms.release.xcconfig"; sourceTree = "<group>"; };
+		B276EA101B3BDFED00BB3B7E /* YSForms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YSForms.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B276EA141B3BDFED00BB3B7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B276EA151B3BDFED00BB3B7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B276EA171B3BDFED00BB3B7E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B276EA1A1B3BDFED00BB3B7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B276EA1C1B3BDFED00BB3B7E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B276EA1F1B3BDFED00BB3B7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B276EA251B3BDFED00BB3B7E /* YSFormsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YSFormsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B276EA2A1B3BDFED00BB3B7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B276EA2B1B3BDFED00BB3B7E /* YSFormsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YSFormsTests.swift; sourceTree = "<group>"; };
+		B276EA381B3BE24C00BB3B7E /* CEMKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CEMKit.swift; sourceTree = "<group>"; };
+		B276EA3A1B3BE24C00BB3B7E /* Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		B276EA3D1B3BE29000BB3B7E /* YSForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSForm.swift; sourceTree = "<group>"; };
+		B276EA3F1B3BE2A800BB3B7E /* YSFormCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSFormCell.swift; sourceTree = "<group>"; };
+		B276EA411B3BE2C000BB3B7E /* YSFormSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSFormSection.swift; sourceTree = "<group>"; };
+		B276EA441B3BE2F600BB3B7E /* YSFormTextFieldCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSFormTextFieldCell.swift; sourceTree = "<group>"; };
+		B276EA461B3BE30E00BB3B7E /* YSFormTextViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSFormTextViewCell.swift; sourceTree = "<group>"; };
+		B276EA481B3BE33200BB3B7E /* YSFormPickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSFormPickerCell.swift; sourceTree = "<group>"; };
+		B276EA4A1B3BE41F00BB3B7E /* YSFormSwitchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSFormSwitchCell.swift; sourceTree = "<group>"; };
+		B276EA521B3BEC0600BB3B7E /* Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridge.h; sourceTree = "<group>"; };
+		B276EA531B3BEDFB00BB3B7E /* YSFormCellAppearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSFormCellAppearance.swift; sourceTree = "<group>"; };
+		B276EA551B3BF17D00BB3B7E /* YSFormCellTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSFormCellTextField.swift; sourceTree = "<group>"; };
+		B276EA571B3BF72400BB3B7E /* YSFormCellTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSFormCellTextView.swift; sourceTree = "<group>"; };
+		D65683485FD41678EA595704 /* libPods-YSForms.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YSForms.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B276EA0D1B3BDFED00BB3B7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				597315EAB1F2418785DE110F /* libPods-YSForms.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B276EA221B3BDFED00BB3B7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5ED75C431EE2297F29900AC4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3866D0CFA8FF5216E2C62748 /* Pods-YSForms.debug.xcconfig */,
+				63242C8A25A1F2D0D455836D /* Pods-YSForms.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		ADC8F8D7E66DA366617141B1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D65683485FD41678EA595704 /* libPods-YSForms.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B276EA071B3BDFEC00BB3B7E = {
+			isa = PBXGroup;
+			children = (
+				B276EA121B3BDFED00BB3B7E /* YSForms */,
+				B276EA281B3BDFED00BB3B7E /* YSFormsTests */,
+				B276EA111B3BDFED00BB3B7E /* Products */,
+				5ED75C431EE2297F29900AC4 /* Pods */,
+				ADC8F8D7E66DA366617141B1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B276EA111B3BDFED00BB3B7E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B276EA101B3BDFED00BB3B7E /* YSForms.app */,
+				B276EA251B3BDFED00BB3B7E /* YSFormsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B276EA121B3BDFED00BB3B7E /* YSForms */ = {
+			isa = PBXGroup;
+			children = (
+				B276EA361B3BE24C00BB3B7E /* Vendors */,
+				B276EA351B3BE0C600BB3B7E /* YSForms */,
+				B276EA431B3BE2DD00BB3B7E /* CustomCells */,
+				B276EA131B3BDFED00BB3B7E /* Supporting Files */,
+			);
+			path = YSForms;
+			sourceTree = "<group>";
+		};
+		B276EA131B3BDFED00BB3B7E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B276EA151B3BDFED00BB3B7E /* AppDelegate.swift */,
+				B276EA171B3BDFED00BB3B7E /* ViewController.swift */,
+				B276EA191B3BDFED00BB3B7E /* Main.storyboard */,
+				B276EA1C1B3BDFED00BB3B7E /* Images.xcassets */,
+				B276EA1E1B3BDFED00BB3B7E /* LaunchScreen.xib */,
+				B276EA141B3BDFED00BB3B7E /* Info.plist */,
+				B276EA521B3BEC0600BB3B7E /* Bridge.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B276EA281B3BDFED00BB3B7E /* YSFormsTests */ = {
+			isa = PBXGroup;
+			children = (
+				B276EA2B1B3BDFED00BB3B7E /* YSFormsTests.swift */,
+				B276EA291B3BDFED00BB3B7E /* Supporting Files */,
+			);
+			path = YSFormsTests;
+			sourceTree = "<group>";
+		};
+		B276EA291B3BDFED00BB3B7E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B276EA2A1B3BDFED00BB3B7E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B276EA351B3BE0C600BB3B7E /* YSForms */ = {
+			isa = PBXGroup;
+			children = (
+				B276EA3D1B3BE29000BB3B7E /* YSForm.swift */,
+				B276EA411B3BE2C000BB3B7E /* YSFormSection.swift */,
+				B276EA3F1B3BE2A800BB3B7E /* YSFormCell.swift */,
+			);
+			path = YSForms;
+			sourceTree = "<group>";
+		};
+		B276EA361B3BE24C00BB3B7E /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				B276EA371B3BE24C00BB3B7E /* CEMKit */,
+				B276EA391B3BE24C00BB3B7E /* Style */,
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		B276EA371B3BE24C00BB3B7E /* CEMKit */ = {
+			isa = PBXGroup;
+			children = (
+				B276EA381B3BE24C00BB3B7E /* CEMKit.swift */,
+			);
+			path = CEMKit;
+			sourceTree = "<group>";
+		};
+		B276EA391B3BE24C00BB3B7E /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				B276EA3A1B3BE24C00BB3B7E /* Style.swift */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		B276EA431B3BE2DD00BB3B7E /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				B276EA571B3BF72400BB3B7E /* YSFormCellTextView.swift */,
+				B276EA551B3BF17D00BB3B7E /* YSFormCellTextField.swift */,
+				B276EA531B3BEDFB00BB3B7E /* YSFormCellAppearance.swift */,
+				B276EA441B3BE2F600BB3B7E /* YSFormTextFieldCell.swift */,
+				B276EA461B3BE30E00BB3B7E /* YSFormTextViewCell.swift */,
+				B276EA4A1B3BE41F00BB3B7E /* YSFormSwitchCell.swift */,
+				B276EA481B3BE33200BB3B7E /* YSFormPickerCell.swift */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B276EA0F1B3BDFED00BB3B7E /* YSForms */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B276EA2F1B3BDFED00BB3B7E /* Build configuration list for PBXNativeTarget "YSForms" */;
+			buildPhases = (
+				7F499868E09D9738CB3DC258 /* Check Pods Manifest.lock */,
+				B276EA0C1B3BDFED00BB3B7E /* Sources */,
+				B276EA0D1B3BDFED00BB3B7E /* Frameworks */,
+				B276EA0E1B3BDFED00BB3B7E /* Resources */,
+				C5250FCACF59E78156840912 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YSForms;
+			productName = YSForms;
+			productReference = B276EA101B3BDFED00BB3B7E /* YSForms.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B276EA241B3BDFED00BB3B7E /* YSFormsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B276EA321B3BDFED00BB3B7E /* Build configuration list for PBXNativeTarget "YSFormsTests" */;
+			buildPhases = (
+				B276EA211B3BDFED00BB3B7E /* Sources */,
+				B276EA221B3BDFED00BB3B7E /* Frameworks */,
+				B276EA231B3BDFED00BB3B7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B276EA271B3BDFED00BB3B7E /* PBXTargetDependency */,
+			);
+			name = YSFormsTests;
+			productName = YSFormsTests;
+			productReference = B276EA251B3BDFED00BB3B7E /* YSFormsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B276EA081B3BDFEC00BB3B7E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Cem Olcay";
+				TargetAttributes = {
+					B276EA0F1B3BDFED00BB3B7E = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					B276EA241B3BDFED00BB3B7E = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = B276EA0F1B3BDFED00BB3B7E;
+					};
+				};
+			};
+			buildConfigurationList = B276EA0B1B3BDFEC00BB3B7E /* Build configuration list for PBXProject "YSForms" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B276EA071B3BDFEC00BB3B7E;
+			productRefGroup = B276EA111B3BDFED00BB3B7E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B276EA0F1B3BDFED00BB3B7E /* YSForms */,
+				B276EA241B3BDFED00BB3B7E /* YSFormsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B276EA0E1B3BDFED00BB3B7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B276EA1B1B3BDFED00BB3B7E /* Main.storyboard in Resources */,
+				B276EA201B3BDFED00BB3B7E /* LaunchScreen.xib in Resources */,
+				B276EA1D1B3BDFED00BB3B7E /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B276EA231B3BDFED00BB3B7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7F499868E09D9738CB3DC258 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C5250FCACF59E78156840912 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YSForms/Pods-YSForms-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B276EA0C1B3BDFED00BB3B7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B276EA3E1B3BE29000BB3B7E /* YSForm.swift in Sources */,
+				B276EA4B1B3BE41F00BB3B7E /* YSFormSwitchCell.swift in Sources */,
+				B276EA561B3BF17D00BB3B7E /* YSFormCellTextField.swift in Sources */,
+				B276EA591B3BF72400BB3B7E /* YSFormCellTextView.swift in Sources */,
+				B276EA181B3BDFED00BB3B7E /* ViewController.swift in Sources */,
+				B276EA471B3BE30E00BB3B7E /* YSFormTextViewCell.swift in Sources */,
+				B276EA491B3BE33200BB3B7E /* YSFormPickerCell.swift in Sources */,
+				B276EA421B3BE2C000BB3B7E /* YSFormSection.swift in Sources */,
+				B276EA3B1B3BE24C00BB3B7E /* CEMKit.swift in Sources */,
+				B276EA401B3BE2A800BB3B7E /* YSFormCell.swift in Sources */,
+				B276EA451B3BE2F600BB3B7E /* YSFormTextFieldCell.swift in Sources */,
+				B276EA541B3BEDFB00BB3B7E /* YSFormCellAppearance.swift in Sources */,
+				B276EA161B3BDFED00BB3B7E /* AppDelegate.swift in Sources */,
+				B276EA3C1B3BE24C00BB3B7E /* Style.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B276EA211B3BDFED00BB3B7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B276EA2C1B3BDFED00BB3B7E /* YSFormsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B276EA271B3BDFED00BB3B7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B276EA0F1B3BDFED00BB3B7E /* YSForms */;
+			targetProxy = B276EA261B3BDFED00BB3B7E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B276EA191B3BDFED00BB3B7E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B276EA1A1B3BDFED00BB3B7E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B276EA1E1B3BDFED00BB3B7E /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B276EA1F1B3BDFED00BB3B7E /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B276EA2D1B3BDFED00BB3B7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B276EA2E1B3BDFED00BB3B7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B276EA301B3BDFED00BB3B7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3866D0CFA8FF5216E2C62748 /* Pods-YSForms.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = YSForms/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = YSForms/Bridge.h;
+			};
+			name = Debug;
+		};
+		B276EA311B3BDFED00BB3B7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63242C8A25A1F2D0D455836D /* Pods-YSForms.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = YSForms/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = YSForms/Bridge.h;
+			};
+			name = Release;
+		};
+		B276EA331B3BDFED00BB3B7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = YSFormsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YSForms.app/YSForms";
+			};
+			name = Debug;
+		};
+		B276EA341B3BDFED00BB3B7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = YSFormsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YSForms.app/YSForms";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B276EA0B1B3BDFEC00BB3B7E /* Build configuration list for PBXProject "YSForms" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B276EA2D1B3BDFED00BB3B7E /* Debug */,
+				B276EA2E1B3BDFED00BB3B7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B276EA2F1B3BDFED00BB3B7E /* Build configuration list for PBXNativeTarget "YSForms" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B276EA301B3BDFED00BB3B7E /* Debug */,
+				B276EA311B3BDFED00BB3B7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B276EA321B3BDFED00BB3B7E /* Build configuration list for PBXNativeTarget "YSFormsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B276EA331B3BDFED00BB3B7E /* Debug */,
+				B276EA341B3BDFED00BB3B7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B276EA081B3BDFEC00BB3B7E /* Project object */;
+}

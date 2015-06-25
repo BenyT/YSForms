@@ -1,0 +1,451 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0178DCD505656E6B164703B4 /* Pods-YSForms-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB04006C788096E10A2E996 /* Pods-YSForms-dummy.m */; };
+		11A34C2AD9DA873C25F3D74C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 169947F8BE05D8D26E05C3F4 /* Foundation.framework */; };
+		15BC72CA4CBA6A7D599585A4 /* JVFloatLabeledTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = C8A5917C9414125F41183A43 /* JVFloatLabeledTextView.h */; };
+		20F468D828F7F8EE5150CB25 /* Pods-YSForms-JVFloatLabeledTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 820CA8244DE8154AEFB5F143 /* Pods-YSForms-JVFloatLabeledTextField-dummy.m */; };
+		3078C3395051340D56369338 /* JVFloatLabeledTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 9765829D4B03B7AFF9867948 /* JVFloatLabeledTextField.h */; };
+		5F2552489DF134345C29C049 /* JVFloatLabeledTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 73CDA00F6D24804D3DADC100 /* JVFloatLabeledTextView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		76A92900D84CD73DC2536A97 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7E184FB7C94C7786CB3FE2A /* UIKit.framework */; };
+		7DF10C710525231AD4A0F873 /* NSString+TextDirectionality.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8CEB989C6E4FB8B30F5FBA /* NSString+TextDirectionality.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9D6C84B2C634C3FB060BBC8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 169947F8BE05D8D26E05C3F4 /* Foundation.framework */; };
+		A04841034EF0E70DE53CA16B /* JVFloatLabeledTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 54204F4760CF4FC9A8C07F72 /* JVFloatLabeledTextField.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		D73DF92A26172BD2368C99DA /* NSString+TextDirectionality.h in Headers */ = {isa = PBXBuildFile; fileRef = 29D861E22D002436E059DD7F /* NSString+TextDirectionality.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		429F18F0867B46A82E22DA57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3967A3AD75A3FB4903E322FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5E01E5E8B860916BB909C4B1;
+			remoteInfo = "Pods-YSForms-JVFloatLabeledTextField";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E0AC1E2022FDD4416C39504 /* Pods-YSForms-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YSForms-resources.sh"; sourceTree = "<group>"; };
+		169947F8BE05D8D26E05C3F4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		16E1F33A799D294F30953A7D /* Pods-YSForms-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YSForms-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1EB04006C788096E10A2E996 /* Pods-YSForms-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YSForms-dummy.m"; sourceTree = "<group>"; };
+		29D861E22D002436E059DD7F /* NSString+TextDirectionality.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+TextDirectionality.h"; path = "JVFloatLabeledTextField/JVFloatLabeledTextField/NSString+TextDirectionality.h"; sourceTree = "<group>"; };
+		33C0E13EB78C5AC1288D82E2 /* Pods-YSForms.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YSForms.debug.xcconfig"; sourceTree = "<group>"; };
+		4649621CD76157446B1971D0 /* Pods-YSForms-JVFloatLabeledTextField-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YSForms-JVFloatLabeledTextField-Private.xcconfig"; sourceTree = "<group>"; };
+		493B4AD90B7463C12BB42ED5 /* Pods-YSForms.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YSForms.release.xcconfig"; sourceTree = "<group>"; };
+		54204F4760CF4FC9A8C07F72 /* JVFloatLabeledTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JVFloatLabeledTextField.m; path = JVFloatLabeledTextField/JVFloatLabeledTextField/JVFloatLabeledTextField.m; sourceTree = "<group>"; };
+		73CDA00F6D24804D3DADC100 /* JVFloatLabeledTextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JVFloatLabeledTextView.m; path = JVFloatLabeledTextField/JVFloatLabeledTextField/JVFloatLabeledTextView.m; sourceTree = "<group>"; };
+		7A2CDF317B1216F1B65822E4 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		7F88E23C223DBAAF9D4F196C /* Pods-YSForms-JVFloatLabeledTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YSForms-JVFloatLabeledTextField-prefix.pch"; sourceTree = "<group>"; };
+		820CA8244DE8154AEFB5F143 /* Pods-YSForms-JVFloatLabeledTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YSForms-JVFloatLabeledTextField-dummy.m"; sourceTree = "<group>"; };
+		88525CC50599C740164F6687 /* Pods-YSForms-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YSForms-environment.h"; sourceTree = "<group>"; };
+		9765829D4B03B7AFF9867948 /* JVFloatLabeledTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JVFloatLabeledTextField.h; path = JVFloatLabeledTextField/JVFloatLabeledTextField/JVFloatLabeledTextField.h; sourceTree = "<group>"; };
+		AB9E4C98F9FA70F0BA6143A1 /* Pods-YSForms-JVFloatLabeledTextField.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YSForms-JVFloatLabeledTextField.xcconfig"; sourceTree = "<group>"; };
+		B7E184FB7C94C7786CB3FE2A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		C8A5917C9414125F41183A43 /* JVFloatLabeledTextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JVFloatLabeledTextView.h; path = JVFloatLabeledTextField/JVFloatLabeledTextField/JVFloatLabeledTextView.h; sourceTree = "<group>"; };
+		DC8CEB989C6E4FB8B30F5FBA /* NSString+TextDirectionality.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+TextDirectionality.m"; path = "JVFloatLabeledTextField/JVFloatLabeledTextField/NSString+TextDirectionality.m"; sourceTree = "<group>"; };
+		DCD00BFE85816547C483AF4A /* libPods-YSForms.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YSForms.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E128765DD8FE2AA59601BA7A /* Pods-YSForms-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YSForms-acknowledgements.plist"; sourceTree = "<group>"; };
+		F57EF664A5FDA09874186523 /* libPods-YSForms-JVFloatLabeledTextField.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YSForms-JVFloatLabeledTextField.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DCC30A039BA67045ED9E0ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11A34C2AD9DA873C25F3D74C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDBEF2B03001C4CEA9412BB1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D6C84B2C634C3FB060BBC8E /* Foundation.framework in Frameworks */,
+				76A92900D84CD73DC2536A97 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		44D35D409A003A8BBA8D0ABA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB9E4C98F9FA70F0BA6143A1 /* Pods-YSForms-JVFloatLabeledTextField.xcconfig */,
+				4649621CD76157446B1971D0 /* Pods-YSForms-JVFloatLabeledTextField-Private.xcconfig */,
+				820CA8244DE8154AEFB5F143 /* Pods-YSForms-JVFloatLabeledTextField-dummy.m */,
+				7F88E23C223DBAAF9D4F196C /* Pods-YSForms-JVFloatLabeledTextField-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-YSForms-JVFloatLabeledTextField";
+			sourceTree = "<group>";
+		};
+		639F2F49FBA6FECABBF56B83 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				169947F8BE05D8D26E05C3F4 /* Foundation.framework */,
+				B7E184FB7C94C7786CB3FE2A /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6C1C461C62DB51A2D3A2D6FB /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F9AF9FF4A55D3575BC4948FB /* Pods-YSForms */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		802255EF5AAB5F1B7F00F454 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				639F2F49FBA6FECABBF56B83 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ACB5EA4545ED560E3C9F49E6 = {
+			isa = PBXGroup;
+			children = (
+				7A2CDF317B1216F1B65822E4 /* Podfile */,
+				802255EF5AAB5F1B7F00F454 /* Frameworks */,
+				F7306D510654BF4AFB3A780F /* Pods */,
+				D68C863A6BB5EFE1DCBDCA06 /* Products */,
+				6C1C461C62DB51A2D3A2D6FB /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D68C863A6BB5EFE1DCBDCA06 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCD00BFE85816547C483AF4A /* libPods-YSForms.a */,
+				F57EF664A5FDA09874186523 /* libPods-YSForms-JVFloatLabeledTextField.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E88794145BBA7407274E6141 /* JVFloatLabeledTextField */ = {
+			isa = PBXGroup;
+			children = (
+				9765829D4B03B7AFF9867948 /* JVFloatLabeledTextField.h */,
+				54204F4760CF4FC9A8C07F72 /* JVFloatLabeledTextField.m */,
+				C8A5917C9414125F41183A43 /* JVFloatLabeledTextView.h */,
+				73CDA00F6D24804D3DADC100 /* JVFloatLabeledTextView.m */,
+				29D861E22D002436E059DD7F /* NSString+TextDirectionality.h */,
+				DC8CEB989C6E4FB8B30F5FBA /* NSString+TextDirectionality.m */,
+				44D35D409A003A8BBA8D0ABA /* Support Files */,
+			);
+			path = JVFloatLabeledTextField;
+			sourceTree = "<group>";
+		};
+		F7306D510654BF4AFB3A780F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E88794145BBA7407274E6141 /* JVFloatLabeledTextField */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F9AF9FF4A55D3575BC4948FB /* Pods-YSForms */ = {
+			isa = PBXGroup;
+			children = (
+				16E1F33A799D294F30953A7D /* Pods-YSForms-acknowledgements.markdown */,
+				E128765DD8FE2AA59601BA7A /* Pods-YSForms-acknowledgements.plist */,
+				1EB04006C788096E10A2E996 /* Pods-YSForms-dummy.m */,
+				88525CC50599C740164F6687 /* Pods-YSForms-environment.h */,
+				0E0AC1E2022FDD4416C39504 /* Pods-YSForms-resources.sh */,
+				33C0E13EB78C5AC1288D82E2 /* Pods-YSForms.debug.xcconfig */,
+				493B4AD90B7463C12BB42ED5 /* Pods-YSForms.release.xcconfig */,
+			);
+			name = "Pods-YSForms";
+			path = "Target Support Files/Pods-YSForms";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CC9E07732DB474AFA88AC297 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3078C3395051340D56369338 /* JVFloatLabeledTextField.h in Headers */,
+				15BC72CA4CBA6A7D599585A4 /* JVFloatLabeledTextView.h in Headers */,
+				D73DF92A26172BD2368C99DA /* NSString+TextDirectionality.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5E01E5E8B860916BB909C4B1 /* Pods-YSForms-JVFloatLabeledTextField */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 777891752EE9BE12F9BCA082 /* Build configuration list for PBXNativeTarget "Pods-YSForms-JVFloatLabeledTextField" */;
+			buildPhases = (
+				EA89D7F3C73F5C697287668C /* Sources */,
+				FDBEF2B03001C4CEA9412BB1 /* Frameworks */,
+				CC9E07732DB474AFA88AC297 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-YSForms-JVFloatLabeledTextField";
+			productName = "Pods-YSForms-JVFloatLabeledTextField";
+			productReference = F57EF664A5FDA09874186523 /* libPods-YSForms-JVFloatLabeledTextField.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CA0B1ED63A054D2E5B931CDE /* Pods-YSForms */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E255E3FE89CB5D678DE95AC5 /* Build configuration list for PBXNativeTarget "Pods-YSForms" */;
+			buildPhases = (
+				35171D828FFE428BDF3EF3FB /* Sources */,
+				3DCC30A039BA67045ED9E0ED /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3E8967D7BD89B9FA0B66EF6D /* PBXTargetDependency */,
+			);
+			name = "Pods-YSForms";
+			productName = "Pods-YSForms";
+			productReference = DCD00BFE85816547C483AF4A /* libPods-YSForms.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3967A3AD75A3FB4903E322FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = BA8A195712C9AE391B3EFD8E /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = ACB5EA4545ED560E3C9F49E6;
+			productRefGroup = D68C863A6BB5EFE1DCBDCA06 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA0B1ED63A054D2E5B931CDE /* Pods-YSForms */,
+				5E01E5E8B860916BB909C4B1 /* Pods-YSForms-JVFloatLabeledTextField */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		35171D828FFE428BDF3EF3FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0178DCD505656E6B164703B4 /* Pods-YSForms-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA89D7F3C73F5C697287668C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A04841034EF0E70DE53CA16B /* JVFloatLabeledTextField.m in Sources */,
+				5F2552489DF134345C29C049 /* JVFloatLabeledTextView.m in Sources */,
+				7DF10C710525231AD4A0F873 /* NSString+TextDirectionality.m in Sources */,
+				20F468D828F7F8EE5150CB25 /* Pods-YSForms-JVFloatLabeledTextField-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3E8967D7BD89B9FA0B66EF6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-YSForms-JVFloatLabeledTextField";
+			target = 5E01E5E8B860916BB909C4B1 /* Pods-YSForms-JVFloatLabeledTextField */;
+			targetProxy = 429F18F0867B46A82E22DA57 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0E4618AB58DE7A25E19DFB4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 493B4AD90B7463C12BB42ED5 /* Pods-YSForms.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		35A087EF5E6B26A65796A114 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4649621CD76157446B1971D0 /* Pods-YSForms-JVFloatLabeledTextField-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-YSForms-JVFloatLabeledTextField/Pods-YSForms-JVFloatLabeledTextField-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		5B9E5C92A4D26F43C3BE796A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33C0E13EB78C5AC1288D82E2 /* Pods-YSForms.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		67868495C39119BF2D18BEF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		AD3490D0161C54263FDB4F86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4649621CD76157446B1971D0 /* Pods-YSForms-JVFloatLabeledTextField-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-YSForms-JVFloatLabeledTextField/Pods-YSForms-JVFloatLabeledTextField-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		FA19AD3159532F3C04029A8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		777891752EE9BE12F9BCA082 /* Build configuration list for PBXNativeTarget "Pods-YSForms-JVFloatLabeledTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35A087EF5E6B26A65796A114 /* Debug */,
+				AD3490D0161C54263FDB4F86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA8A195712C9AE391B3EFD8E /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67868495C39119BF2D18BEF6 /* Debug */,
+				FA19AD3159532F3C04029A8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E255E3FE89CB5D678DE95AC5 /* Build configuration list for PBXNativeTarget "Pods-YSForms" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B9E5C92A4D26F43C3BE796A /* Debug */,
+				0E4618AB58DE7A25E19DFB4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3967A3AD75A3FB4903E322FB /* Project object */;
+}
