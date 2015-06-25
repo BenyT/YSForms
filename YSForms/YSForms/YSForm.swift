@@ -19,7 +19,13 @@ class YSForm {
     // MARK: Properties
     
     var form: UIView!
-    var sections: [YSFormSection]!
+    let sectionPadding: CGFloat = 20
+    
+    var sections: [YSFormSection] = [] {
+        didSet {
+            self.draw()
+        }
+    }
     
     
     // MARK: Init
@@ -39,8 +45,31 @@ class YSForm {
         sections.append(section)
     }
     
-    func updateSectionAtIndex (index: Int) {
+    
+    // MARK: Draw
+    
+    func draw () {
         
+        // reset
+        
+        if form != nil {
+            form = nil
+        }
+        
+        form = UIView (x: 0, y: 0, w: YSFormWidth, h: 0)
+        
+        var height: CGFloat = 0
+        
+        
+        // draw
+        
+        for section in sections {
+            section.section.y = height
+            form.addSubview(section.section)
+            height = section.section.bottomWithOffset(sectionPadding)
+        }
+        
+        form.h = height
     }
     
     

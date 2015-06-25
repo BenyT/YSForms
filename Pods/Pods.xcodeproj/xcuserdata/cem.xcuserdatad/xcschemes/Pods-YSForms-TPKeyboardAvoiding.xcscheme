@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "07F4F2785B327A122EE122F0"
-               BuildableName = "libPods-YSForms-JVFloatLabeledTextField.a"
-               BlueprintName = "Pods-YSForms-JVFloatLabeledTextField"
+               BlueprintIdentifier = "00070255322A0708E0E89228"
+               BuildableName = "libPods-YSForms-TPKeyboardAvoiding.a"
+               BlueprintName = "Pods-YSForms-TPKeyboardAvoiding"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CA0B1ED63A054D2E5B931CDE"
+               BlueprintIdentifier = "BA74C26C55EA708CA25F28FC"
                BuildableName = "libPods-YSForms.a"
                BlueprintName = "Pods-YSForms"
                ReferencedContainer = "container:Pods.xcodeproj">

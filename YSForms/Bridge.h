@@ -12,4 +12,6 @@
 #import "JVFloatLabeledTextField.h"
 #import "JVFloatLabeledTextView.h"
 
+#import "TPKeyboardAvoidingScrollView.h"
+
 #endif

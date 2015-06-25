@@ -1,10 +1,13 @@
 PODS:
   - JVFloatLabeledTextField (1.0.4)
+  - TPKeyboardAvoiding (1.2.7)
 
 DEPENDENCIES:
   - JVFloatLabeledTextField
+  - TPKeyboardAvoiding
 
 SPEC CHECKSUMS:
   JVFloatLabeledTextField: 18b05449d479733841b2c451c87e201a45de26e2
+  TPKeyboardAvoiding: 9375176f625873c9f9246cd42d5fcf9fc5787ae9
 
 COCOAPODS: 0.36.0.rc.1

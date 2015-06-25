@@ -21,6 +21,8 @@ class YSFormCell {
     var required: Bool = true
     var enabled: Bool = true
     
+    var didDrawn: Bool = false
+    
     private var separator: CALayer?
     
     
@@ -33,6 +35,7 @@ class YSFormCell {
         self.value = value
         
         cell = UIView(x: 0, y: 0, w: YSFormWidth, h: 0)
+        cell.backgroundColor = UIColor.whiteColor()
     }
     
     

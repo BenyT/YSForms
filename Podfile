@@ -3,6 +3,7 @@
 
 target 'YSForms' do
 pod 'JVFloatLabeledTextField'
+pod 'TPKeyboardAvoiding'
 end
 
 target 'YSFormsTests' do

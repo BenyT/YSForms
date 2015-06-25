@@ -12,16 +12,28 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = UIColor.BackgroundColor()
         
-        let cell = YSFormTextFieldCell(tag: "cell", title: "Adres", value: nil)
-        cell.cell.y = 50
-        cell.cell.backgroundColor = UIColor.Gray(250)
-        view.addSubview(cell.cell)
+        let form = YSForm()
         
-        let textView = YSFormTextViewCell(tag: "view", title: "Aciklama", value: nil)
-        textView.cell.y = cell.cell.bottomWithOffset(10)
-        textView.cell.backgroundColor = UIColor.Gray(250)
-        view.addSubview(textView.cell)
+        let firstSection = YSFormSection(tag: "sec 1", title: nil)
+        firstSection.addCell(YSFormTextFieldCell(tag: "first", title: "First Name", value: nil))
+        firstSection.addCell(YSFormTextFieldCell(tag: "last", title: "Last Name", value: nil))
+        firstSection.addCell(YSFormTextFieldCell(tag: "address", title: "Address", value: nil))
+        
+        let secondSection = YSFormSection(tag: "sec 2", title: "Information")
+        secondSection.addCell(YSFormTextFieldCell(tag: "city", title: "City", value: nil))
+        secondSection.addCell(YSFormTextViewCell(tag: "notes", title: "Notes", value: nil))
+        secondSection.addCell(YSFormTextViewCell(tag: "add", title: "Additional", value: nil))
+        
+        form.addSection(firstSection)
+        form.addSection(secondSection)
+        
+        let scroll = TPKeyboardAvoidingScrollView(frame: view.frame)
+        view.addSubview(scroll)
+        
+        scroll.addSubview(form.form)
+        scroll.contentHeight = form.form.h
     }
 
 }

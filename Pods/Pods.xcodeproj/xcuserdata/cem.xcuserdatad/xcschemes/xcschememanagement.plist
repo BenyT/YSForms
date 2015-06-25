@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-YSForms-TPKeyboardAvoiding.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-YSForms.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>5E01E5E8B860916BB909C4B1</key>
+		<key>00070255322A0708E0E89228</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CA0B1ED63A054D2E5B931CDE</key>
+		<key>07F4F2785B327A122EE122F0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BA74C26C55EA708CA25F28FC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
