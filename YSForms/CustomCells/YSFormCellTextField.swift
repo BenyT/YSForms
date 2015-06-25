@@ -8,17 +8,18 @@
 
 import UIKit
 
-class YSFormCellTextField: JVFloatLabeledTextField {
+class YSFormCellTextField: JVFloatLabeledTextField, UITextFieldDelegate {
 
     init (height: CGFloat, title: String, value: String?) {
         super.init(frame: CGRect(x: 20, y: 0, width: YSFormWidth - 40, height: height))
+        delegate = self
         
         // content
         
         if let v = value {
             text = v
+            placeholderYPadding = 10
         }
-        
         
         // style
         
@@ -35,11 +36,14 @@ class YSFormCellTextField: JVFloatLabeledTextField {
         floatingLabelTextColor = YSFormCellAppearanceDefault.floatingPlaceholderColor
         floatingLabelActiveTextColor = YSFormCellAppearanceDefault.floatingPlaceholderActiveColor
         floatingLabelFont = YSFormCellAppearanceDefault.floatingPlaceholderFont
-        
     }
     
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+    }
+    
+    func textFieldDidBeginEditing(textField: UITextField) {
+        placeholderYPadding = 0
     }
     
 }

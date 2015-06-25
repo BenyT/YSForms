@@ -8,7 +8,7 @@
 
 import UIKit
 
-class YSFormTextFieldCell: YSFormCell, UITextFieldDelegate {
+class YSFormTextFieldCell: YSFormCell {
 
     // MARK: Properties
 
@@ -21,16 +21,16 @@ class YSFormTextFieldCell: YSFormCell, UITextFieldDelegate {
         super.init(tag: tag, title: title, value: value)
         
         textField = YSFormCellTextField(height: rowHeight(), title: title, value: value as? String)
-        textField.delegate = self
         cell.addSubview(textField)
         cell.h = rowHeight()
+        
+        NSNotificationCenter.defaultCenter().addObserverForName(UITextFieldTextDidChangeNotification,
+            object: textField,
+            queue: NSOperationQueue.mainQueue(),
+            usingBlock: {
+                [unowned self] notif in
+                self.value = self.textField.text
+            })
     }
     
-    
-    // MARK: UITextFieldDelegate
-    
-    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
-        value = textField.text
-        return true
-    }
 }

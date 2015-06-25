@@ -10,10 +10,6 @@ import UIKit
 
 let YSFormWidth: CGFloat = UIScreen.ScreenWidth
 
-protocol YSFormDelegate {
-    func formDidSelectCell (cell: YSFormCell)
-}
-
 class YSForm {
     
     // MARK: Properties
@@ -91,6 +87,22 @@ class YSForm {
         } else {
             fail(msg)
         }
+    }
+    
+    
+    // MARK: Values
+    
+    func getValues () -> [String: AnyObject?] {
+        
+        var values: [String: AnyObject?] = [:]
+        
+        for s in sections {
+            for c in s.cells {
+                values[c.tag] = c.value
+            }
+        }
+        
+        return values
     }
     
 }

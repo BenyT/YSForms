@@ -28,6 +28,8 @@
 		B276EA591B3BF72400BB3B7E /* YSFormCellTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B276EA571B3BF72400BB3B7E /* YSFormCellTextView.swift */; };
 		B276EA5C1B3C1E2A00BB3B7E /* YSFormValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B276EA5B1B3C1E2A00BB3B7E /* YSFormValidator.swift */; };
 		B276EA5D1B3C252B00BB3B7E /* YSFormValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B276EA5B1B3C1E2A00BB3B7E /* YSFormValidator.swift */; };
+		B276EA611B3C50CB00BB3B7E /* nextGray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B276EA5F1B3C50CB00BB3B7E /* nextGray@2x.png */; };
+		B276EA621B3C50CB00BB3B7E /* nextGray@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B276EA601B3C50CB00BB3B7E /* nextGray@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		B276EA551B3BF17D00BB3B7E /* YSFormCellTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSFormCellTextField.swift; sourceTree = "<group>"; };
 		B276EA571B3BF72400BB3B7E /* YSFormCellTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSFormCellTextView.swift; sourceTree = "<group>"; };
 		B276EA5B1B3C1E2A00BB3B7E /* YSFormValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSFormValidator.swift; sourceTree = "<group>"; };
+		B276EA5F1B3C50CB00BB3B7E /* nextGray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nextGray@2x.png"; sourceTree = "<group>"; };
+		B276EA601B3C50CB00BB3B7E /* nextGray@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nextGray@3x.png"; sourceTree = "<group>"; };
 		D65683485FD41678EA595704 /* libPods-YSForms.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YSForms.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -129,6 +133,7 @@
 		B276EA121B3BDFED00BB3B7E /* YSForms */ = {
 			isa = PBXGroup;
 			children = (
+				B276EA5E1B3C50CB00BB3B7E /* Resources */,
 				B276EA361B3BE24C00BB3B7E /* Vendors */,
 				B276EA351B3BE0C600BB3B7E /* YSForms */,
 				B276EA431B3BE2DD00BB3B7E /* CustomCells */,
@@ -218,6 +223,15 @@
 			path = CustomCells;
 			sourceTree = "<group>";
 		};
+		B276EA5E1B3C50CB00BB3B7E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B276EA5F1B3C50CB00BB3B7E /* nextGray@2x.png */,
+				B276EA601B3C50CB00BB3B7E /* nextGray@3x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -301,7 +315,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B276EA1B1B3BDFED00BB3B7E /* Main.storyboard in Resources */,
+				B276EA621B3C50CB00BB3B7E /* nextGray@3x.png in Resources */,
 				B276EA201B3BDFED00BB3B7E /* LaunchScreen.xib in Resources */,
+				B276EA611B3C50CB00BB3B7E /* nextGray@2x.png in Resources */,
 				B276EA1D1B3BDFED00BB3B7E /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

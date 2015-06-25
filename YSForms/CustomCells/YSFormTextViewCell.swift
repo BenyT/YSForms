@@ -8,7 +8,7 @@
 
 import UIKit
 
-class YSFormTextViewCell: YSFormCell {
+class YSFormTextViewCell: YSFormCell, UITextViewDelegate {
     
     // MARK: Properties
     
@@ -21,6 +21,7 @@ class YSFormTextViewCell: YSFormCell {
         super.init(tag: tag, title: title, value: value)
         
         textView = YSFormCellTextView(height: rowHeight(), title: title, value: value as? String)
+        textView.delegate = self
         cell.addSubview(textView)
         cell.h = rowHeight()
     }
@@ -30,5 +31,12 @@ class YSFormTextViewCell: YSFormCell {
     
     override func rowHeight() -> CGFloat {
         return 100.0
+    }
+    
+    
+    // MARK: UITextViewDelegate
+    
+    func textViewDidChange(textView: UITextView) {
+        value = textView.text
     }
 }

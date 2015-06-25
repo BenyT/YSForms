@@ -10,8 +10,8 @@ import UIKit
 
 class YSFormCellTextView: JVFloatLabeledTextView {
 
-    init (height: CGFloat, title: String, value: String?) {
-        super.init(frame: CGRect(x: 20, y: 0, width: YSFormWidth - 40, height: height), textContainer: nil)
+    init (width: CGFloat? = nil, height: CGFloat, title: String, value: String?) {
+        super.init(frame: CGRect(x: 20, y: 0, width: width ?? YSFormWidth - 40, height: height), textContainer: nil)
         commonInit()
         
         // content

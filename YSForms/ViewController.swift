@@ -17,8 +17,8 @@ class ViewController: UIViewController {
         // first section
         
         let firstSection = YSFormSection(tag: "sec 1", title: "Required")
-        firstSection.addCell(YSFormTextFieldCell(tag: "first", title: "First Name", value: nil))
-        firstSection.addCell(YSFormTextFieldCell(tag: "last", title: "Last Name", value: nil))
+        firstSection.addCell(YSFormTextFieldCell(tag: "first", title: "First Name", value: "cem"))
+        firstSection.addCell(YSFormTextFieldCell(tag: "last", title: "Last Name", value: "Olcay"))
         firstSection.addCell(YSFormTextFieldCell(tag: "address", title: "Address", value: nil))
         
         
@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         
         let secondSection = YSFormSection(tag: "sec 2", title: "Information")
         secondSection.addCell(YSFormTextFieldCell(tag: "city", title: "City", value: nil))
-        secondSection.addCell(YSFormTextViewCell(tag: "notes", title: "Notes", value: nil))
+        secondSection.addCell(YSFormTextViewCell(tag: "notes", title: "Notes", value: "Istanbul"))
         secondSection.addCell(YSFormTextViewCell(tag: "add", title: "Additional", value: nil))
         
         
@@ -40,11 +40,29 @@ class ViewController: UIViewController {
         phoneCell.addValidator(YSFormValidator.Phone)
         phoneCell.addValidator(YSFormValidator.Required(failMessage: "Lutfen telefon numaranizi giriniz"))
         
+        let pickerCell = YSFormPickerCell(tag: "picker", title: "Pick something nice", value: nil, action: {
+            cell in
+            cell.value = "picked"
+        })
         
+        let pickedCell = YSFormPickerCell(tag: "picked", title: "Picker", value: "Already picked something here and some meani words for demo", action: {
+            cell in
+            cell.value = "hey"
+        })
+        
+
         let thirdSection = YSFormSection(tag: "sec 3", title: "Validation")
         thirdSection.addCell(mailCell)
         thirdSection.addCell(phoneCell)
+        thirdSection.addCell(pickerCell)
+        thirdSection.addCell(pickedCell)
         
+        
+        // forth section
+        
+        let forthSection = YSFormSection(tag: "forthSecton", title: nil)
+        forthSection.addCell(YSFormSwitchCell(tag: "switch", title: "So what do you think about it, isnt it nice ?", value: true))
+
         
         // form
         
@@ -52,6 +70,7 @@ class ViewController: UIViewController {
         form.addSection(firstSection)
         form.addSection(secondSection)
         form.addSection(thirdSection)
+        form.addSection(forthSection)
         
         
         // scroll
@@ -72,6 +91,7 @@ class ViewController: UIViewController {
             sender in
             form.validate({
                 println ("form is valid")
+                println (form.getValues())
             },
             fail: {
                 message in

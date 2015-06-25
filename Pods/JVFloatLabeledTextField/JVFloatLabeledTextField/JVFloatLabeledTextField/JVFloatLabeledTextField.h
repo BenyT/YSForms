@@ -123,5 +123,7 @@ IB_DESIGNABLE
  *  @param floatingTitle The string to be shown above the text field once it has been populated with text by the user.
  */
 - (void)setPlaceholder:(NSString *)placeholder floatingTitle:(NSString *)floatingTitle;
+- (void)setLabelOriginForTextAlignment;
+- (void)showFloatingLabel:(BOOL)animated;
 
 @end
