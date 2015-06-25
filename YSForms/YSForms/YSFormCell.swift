@@ -24,6 +24,7 @@ class YSFormCell {
     var didDrawn: Bool = false
     
     private var separator: CALayer?
+    private var validators: [YSFormValidator]?
     
     
     // MARK: Init
@@ -70,5 +71,28 @@ class YSFormCell {
         }
         
         separator = nil
+    }
+
+
+    // MARK: Validation
+    
+    func addValid (validator: YSFormValidator) {
+        
+        if validators == nil {
+            validators = []
+        }
+        
+        validators?.append(validator)
+    }
+    
+    func isValid () -> Bool {
+        
+        if let v = validators {
+            if let value = value as? String {
+                return count(Set(v.map{ return $0.isValid(value).0 })) <= 1
+            }
+        }
+        
+        return true
     }
 }

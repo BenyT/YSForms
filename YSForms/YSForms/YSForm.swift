@@ -76,7 +76,7 @@ class YSForm {
     // MARK: Validate
     
     func validate () {
-    
+        
     }
     
 }

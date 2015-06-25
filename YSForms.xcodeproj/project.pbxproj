@@ -26,6 +26,8 @@
 		B276EA541B3BEDFB00BB3B7E /* YSFormCellAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = B276EA531B3BEDFB00BB3B7E /* YSFormCellAppearance.swift */; };
 		B276EA561B3BF17D00BB3B7E /* YSFormCellTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B276EA551B3BF17D00BB3B7E /* YSFormCellTextField.swift */; };
 		B276EA591B3BF72400BB3B7E /* YSFormCellTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B276EA571B3BF72400BB3B7E /* YSFormCellTextView.swift */; };
+		B276EA5C1B3C1E2A00BB3B7E /* YSFormValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B276EA5B1B3C1E2A00BB3B7E /* YSFormValidator.swift */; };
+		B276EA5D1B3C252B00BB3B7E /* YSFormValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B276EA5B1B3C1E2A00BB3B7E /* YSFormValidator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,7 @@
 		B276EA531B3BEDFB00BB3B7E /* YSFormCellAppearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSFormCellAppearance.swift; sourceTree = "<group>"; };
 		B276EA551B3BF17D00BB3B7E /* YSFormCellTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSFormCellTextField.swift; sourceTree = "<group>"; };
 		B276EA571B3BF72400BB3B7E /* YSFormCellTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSFormCellTextView.swift; sourceTree = "<group>"; };
+		B276EA5B1B3C1E2A00BB3B7E /* YSFormValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSFormValidator.swift; sourceTree = "<group>"; };
 		D65683485FD41678EA595704 /* libPods-YSForms.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YSForms.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -171,6 +174,7 @@
 				B276EA3D1B3BE29000BB3B7E /* YSForm.swift */,
 				B276EA411B3BE2C000BB3B7E /* YSFormSection.swift */,
 				B276EA3F1B3BE2A800BB3B7E /* YSFormCell.swift */,
+				B276EA5B1B3C1E2A00BB3B7E /* YSFormValidator.swift */,
 			);
 			path = YSForms;
 			sourceTree = "<group>";
@@ -357,6 +361,7 @@
 				B276EA471B3BE30E00BB3B7E /* YSFormTextViewCell.swift in Sources */,
 				B276EA491B3BE33200BB3B7E /* YSFormPickerCell.swift in Sources */,
 				B276EA421B3BE2C000BB3B7E /* YSFormSection.swift in Sources */,
+				B276EA5C1B3C1E2A00BB3B7E /* YSFormValidator.swift in Sources */,
 				B276EA3B1B3BE24C00BB3B7E /* CEMKit.swift in Sources */,
 				B276EA401B3BE2A800BB3B7E /* YSFormCell.swift in Sources */,
 				B276EA451B3BE2F600BB3B7E /* YSFormTextFieldCell.swift in Sources */,
@@ -370,6 +375,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B276EA5D1B3C252B00BB3B7E /* YSFormValidator.swift in Sources */,
 				B276EA2C1B3BDFED00BB3B7E /* YSFormsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

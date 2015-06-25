@@ -35,6 +35,7 @@ class ViewController: UIViewController {
         scroll.addSubview(form.form)
         form.form.y = 30
         scroll.contentHeight = form.form.bottomWithOffset(10)
+    
     }
 
 }

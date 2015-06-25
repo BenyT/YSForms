@@ -20,17 +20,28 @@ class YSFormsTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock() {
-            // Put the code you want to measure the time of here.
-        }
+        
+    func testYSFormValidator () {
+        
+        let mail = "ccemolcay@gmail.com"
+        let xmail = "cemcem"
+        
+        XCTAssertTrue(YSFormValidator.Email.isValid(mail), mail + " is \(YSFormValidator.Email.isValid(mail))")
+        XCTAssertFalse(YSFormValidator.Email.isValid(xmail), xmail + " is \(YSFormValidator.Email.isValid(xmail))")
+        
+        
+        let phone = "1234567890"
+        let xphone = "123"
+        
+        XCTAssertTrue(YSFormValidator.Phone.isValid(phone), phone + " is \(YSFormValidator.Phone.isValid(phone))")
+        XCTAssertFalse(YSFormValidator.Phone.isValid(xphone), xphone + " is \(YSFormValidator.Phone.isValid(xphone))")
+
+        
+        let req = "some"
+        let xreq = ""
+        
+        XCTAssertTrue(YSFormValidator.Required.isValid(req), req + " is \(YSFormValidator.Required.isValid(req))")
+        XCTAssertFalse(YSFormValidator.Required.isValid(xreq), xreq + " is \(YSFormValidator.Required.isValid(xreq))")
     }
     
 }
